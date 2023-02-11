@@ -1,0 +1,15 @@
+http://localhost:8080/sensors/registration
+{
+ "name":"test1"
+}
+
+
+
+http://localhost:8080/measurements/add
+{
+ "value": "25.8",
+ "raining": "true",
+ "sensor": {
+    "name":"test2"
+  }
+}
