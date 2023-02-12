@@ -7,9 +7,9 @@ http://localhost:8080/sensors/registration
 
 http://localhost:8080/measurements/add
 {
- "value": "25.8",
- "raining": "true",
+ "value": 25.8,
+ "raining": true,
  "sensor": {
-    "name":"test2"
+    "name":"test1"
   }
 }

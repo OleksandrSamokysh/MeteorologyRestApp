@@ -14,12 +14,9 @@ public class DataDTO {
     @Max(value = 100, message = "temp value should be between -100 and 100")
     private Double value;
 
-//    @Column(name = "raining_status")
     @NotNull(message = "raining status should not be empty")
     private Boolean raining;
 
-//    @ManyToOne
-//    @JoinColumn(name = "sensor_id", referencedColumnName = "id")
     private SensorDTO sensor;
 
     public Double getValue() {

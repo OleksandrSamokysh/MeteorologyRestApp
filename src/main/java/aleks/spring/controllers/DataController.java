@@ -60,17 +60,6 @@ public class DataController {
         return ResponseEntity.ok(HttpStatus.OK); // 200 status
     }
 
-//    @ExceptionHandler
-//    private ResponseEntity<PersonErrorResponse> handleException(PersonNotFoundException e) {
-//        PersonErrorResponse response = new PersonErrorResponse(
-//                "Person with this id wasn`t found!",
-//                System.currentTimeMillis()
-//        );
-//
-//        // In HTTP овтете тело ответа (response) и статус в загооловке
-//        return new ResponseEntity<>(response, HttpStatus.NOT_FOUND); //NOT_FOUND - 404 status
-//    }
-//
     @ExceptionHandler
     private ResponseEntity<DataErrorResponse> handleException(DataException e) {
         DataErrorResponse response = new DataErrorResponse(
